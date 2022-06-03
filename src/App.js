@@ -5,6 +5,8 @@ import AlignContent from './components/AlignContent'
 import FlexBasis from './components/FlexBasis'
 import FlexGrow from './components/FlexGrow'
 import FlexShrink from './components/FlexShrink'
+import FlexWrap from './components/FlexWrap'
+import FlexFlow from './components/FlexFlow'
 
 function App() {
     return (
@@ -23,7 +25,12 @@ function App() {
                 <br />
                 <Link to="/flexgrow">FlexGrow</Link>
                 <br />
+                <Link to="/flexwrap">FlexWrap</Link>
+                <br />
                 <Link to="/flexshrink">FlexShrink</Link>
+                <br />
+                <Link to="/flexflow">FlexFlow</Link>
+                <br />
                 <Route component={Justify} path="/justify">
                     Justify
                 </Route>
@@ -39,8 +46,15 @@ function App() {
                 <Route component={FlexGrow} path="/flexgrow">
                     FlexGrow
                 </Route>
+
                 <Route component={FlexShrink} path="/flexshrink">
                     FlexShrink
+                </Route>
+                <Route component={FlexWrap} path="/flexwrap">
+                    FlexWrap
+                </Route>
+                <Route component={FlexFlow} path="/flexflow">
+                    FlexFlow
                 </Route>
             </section>
         </>
