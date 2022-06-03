@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles.css'
+import './items.css'
 
 const AlignItem = () => {
     return (

@@ -1,22 +1,31 @@
 import { Link, Route } from 'wouter'
 import Justify from './components/Justify'
 import AlignItem from './components/AlignItem'
-import './App.css'
+import AlignContent from './components/AlignContent'
 
 function App() {
     return (
-        <section className="container column">
-            <h1>css FlexBox</h1>
-            <Link to="/">Home</Link>
-            <Link to="/justify">Justify</Link>
-            <Link to="/alignitem">AlignItem</Link>
-            <Route component={Justify} path="/justify">
-                Justify
-            </Route>
-            <Route component={AlignItem} path="/alignitem">
-                AlignItem
-            </Route>
-        </section>
+        <>
+            <section>
+                <h1>css FlexBox</h1>
+                <Link to="/">Home</Link>
+                <br />
+                <Link to="/justify">Justify</Link>
+                <br />
+                <Link to="/alignitem">AlignItem</Link>
+                <br />
+                <Link to="/aligncontent">AlignContent</Link>
+                <Route component={Justify} path="/justify">
+                    Justify
+                </Route>
+                <Route component={AlignItem} path="/alignitem">
+                    AlignItem
+                </Route>
+                <Route component={AlignContent} path="/aligncontent">
+                    AlignContent
+                </Route>
+            </section>
+        </>
     )
 }
 
