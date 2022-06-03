@@ -1,0 +1,28 @@
+.flex-container {
+    display: flex;
+    border: 1px solid black;
+    max-width: 450px;
+    height: 100px;
+    margin: 15px;
+}
+.items {
+    background-color: blue;
+    margin: 4px;
+    color: white;
+    text-align: center;
+}
+.bauto {
+    flex-basis: auto;
+}
+.fg-1 {
+    flex-grow: 1;
+}
+.fg-2 {
+    flex-grow: 2;
+}
+.fg-3 {
+    flex-grow: 3;
+}
+.bg-0 {
+    flex-basis: 0;
+}
